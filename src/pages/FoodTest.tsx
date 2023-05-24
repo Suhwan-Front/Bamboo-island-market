@@ -160,7 +160,7 @@ const FoodTest: React.FC = () => {
               disabled={currentPage === totalQuestions}
               className="text-fontColor pl-3"
             >
-              결과보기
+              <Link to="/resultPage">결과보기</Link>
             </button>
           ) : (
             <button

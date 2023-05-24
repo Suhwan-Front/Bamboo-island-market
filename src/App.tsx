@@ -3,6 +3,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Main from './pages/Main';
 import MapPage from './pages/MapPage';
 import FoodTest from './pages/FoodTest';
+import ResultPage from './pages/ResultPage';
 
 const App: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const App: React.FC = () => {
         <Route path="/" element={<Main />} />
         <Route path="mapPage" element={<MapPage />} />
         <Route path="foodTest" element={<FoodTest />} />
+        <Route path="resultPage" element={<ResultPage />} />
       </Routes>
     </BrowserRouter>
   );
