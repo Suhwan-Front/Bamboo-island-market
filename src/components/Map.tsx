@@ -40,7 +40,9 @@ function Map(): JSX.Element {
   return (
     <>
       {window.google === undefined ? (
-        <LoadScript googleMapsApiKey="AIzaSyAztXc4J5mZGY0T2nIcAjV63cqEg3lgfGs">
+        <LoadScript
+          googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}
+        >
           <GoogleMap
             mapContainerStyle={containerStyle}
             center={center}
