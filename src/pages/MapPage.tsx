@@ -21,7 +21,7 @@ function MapPage(): JSX.Element {
           </Link>
         </div>
         <div className="flex justify-center">
-          <Link to="/foodTest">
+          <Link to="/history">
             <button className="border-buttonColor bg-white mt-5 border-t-2 border-l-2 border-r-2 border-b-4 rounded-2xl h-12 w-72 font-black text-2xl text-slate-700 hover:bg-buttonColor hover:text-white">
               나와 맞는 음식 테스트
             </button>

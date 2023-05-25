@@ -16,6 +16,9 @@ interface Question {
   checker: number;
 }
 
+const getRandom = (min: number, max: number) =>
+  Math.random() * (max - min) + min;
+
 const FoodTest: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const totalQuestions = 7;
@@ -25,6 +28,22 @@ const FoodTest: React.FC = () => {
 
   const handlePageChange = (pageNumber: number) => {
     setCurrentPage(pageNumber);
+  };
+  const random = Math.floor(getRandom(0, 5));
+  const handleRandomResult = () => {
+    if (random === 0) {
+      return <Link to="/resultPage">결과보기</Link>;
+    }
+    if (random === 1) {
+      return <Link to="/resultPage2">결과보기</Link>;
+    }
+    if (random === 2) {
+      return <Link to="/resultPage3">결과보기</Link>;
+    }
+    if (random === 3) {
+      return <Link to="/resultPage4">결과보기</Link>;
+    }
+    return <Link to="/resultPage1">결과보기</Link>;
   };
 
   const selectChecker = (questionIndex: number, checkerIndex: number) => {
@@ -160,7 +179,7 @@ const FoodTest: React.FC = () => {
               disabled={currentPage === totalQuestions}
               className="text-fontColor pl-3"
             >
-              <Link to="/resultPage">결과보기</Link>
+              {handleRandomResult()}
             </button>
           ) : (
             <button
