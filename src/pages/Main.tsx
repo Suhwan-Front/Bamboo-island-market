@@ -4,7 +4,7 @@ import Logo from '../imgs/main-logo.png';
 
 function Main(): JSX.Element {
   return (
-    <>
+    <div className="bg-mainColor">
       <div className="bg-mainColor bg-cover h-screen">
         <div className="flex justify-center pt-40">
           <img className="h-40 w-56" src={Logo} />
@@ -24,7 +24,7 @@ function Main(): JSX.Element {
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
