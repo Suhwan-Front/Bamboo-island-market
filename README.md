@@ -6,7 +6,7 @@
 ### 개발 기간
 
 > 2023-5-24 ~ 2023-5-25 (2일)  
-> 링크: https://master--ornate-centaur-aae239.netlify.app/resultPage4
+> 링크: https://master--ornate-centaur-aae239.netlify.app
 
 역할
 |이름|역할|
