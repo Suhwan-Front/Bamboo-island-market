@@ -142,7 +142,7 @@ const FoodTest: React.FC = () => {
   };
 
   return (
-    <>
+    <div className="bg-mainColor">
       <div className="bg-mainColor bg-cover h-screen p-10">
         <Link to="/">
           <img src={Logo} className="w-30 h-20" alt="Logo" />
@@ -192,7 +192,7 @@ const FoodTest: React.FC = () => {
           )}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

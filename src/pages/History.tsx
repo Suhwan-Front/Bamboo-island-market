@@ -4,7 +4,7 @@ import Logo from '../imgs/main-logo.png';
 
 const History: React.FC = () => {
   return (
-    <>
+    <div className="bg-mainColor">
       <div className="bg-mainColor bg-cover h-screen p-10">
         <Link to="/">
           <img src={Logo} className="w-30 h-20" />
@@ -37,7 +37,7 @@ const History: React.FC = () => {
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

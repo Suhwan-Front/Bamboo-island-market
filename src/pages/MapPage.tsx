@@ -5,7 +5,7 @@ import Map from '../components/Map';
 
 function MapPage(): JSX.Element {
   return (
-    <>
+    <div className="bg-mainColor">
       <div className="bg-mainColor bg-cover h-screen p-10">
         <Link to="/">
           <img src={Logo} className="w-30 h-20" />
@@ -28,7 +28,7 @@ function MapPage(): JSX.Element {
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

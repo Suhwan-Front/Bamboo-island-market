@@ -4,7 +4,7 @@ import Logo from '../imgs/main-logo.png';
 
 function ResultPage1(): JSX.Element {
   return (
-    <>
+    <div className="bg-mainColor">
       <div className="bg-mainColor bg-cover h-screen">
         <div className="p-10">
           <Link to="/">
@@ -91,7 +91,7 @@ function ResultPage1(): JSX.Element {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
